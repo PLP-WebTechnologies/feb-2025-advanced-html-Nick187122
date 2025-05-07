@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicholas Oyiolo</title>
+  </head>
+  <body>
+    <!-- Ordered list with Roman numerals -->
+    <h2>Top Priorities</h2>
+    <ol type="i">
+      <li>Complete the project</li>
+      <li>Review documentation</li>
+      <li>Submit report</li>
+    </ol>
+
+    <!-- External image from pexels.com -->
+    <h2>Featured Image</h2>
+    <img
+      src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg"
+      alt="Beautiful landscape"
+      width="500"
+    />
+    <p>Photo from Pexels.com</p>
+
+    <!-- Contacts table -->
+    <h2>Contact List</h2>
+    <table border="1" cellpadding="8">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Mobile</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Joseph Mucheru</td>
+          <td>Kiambu</td>
+          <td>555-0101</td>
+          <td>jmucheruu@yahoo.com</td>
+        </tr>
+        <tr>
+          <td>Janet Akello</td>
+          <td>Nyahururu</td>
+          <td>555-0202</td>
+          <td>janetakello@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Bob Wairimu</td>
+          <td>Kirinyaga</td>
+          <td>555-0303</td>
+          <td>bobnjoroge@outlook.com</td>
+        </tr>
+        <tr>
+          <td>Alice Simiyu</td>
+          <td>Mumias</td>
+          <td>555-0404</td>
+          <td>alicesimiyu20@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Charlie Wesonga</td>
+          <td>Nairobi</td>
+          <td>555-0505</td>
+          <td>charlieomondi@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="/submit" method="post">
+      <!-- Text inputs -->
+      <div>
+        <label for="name">Full Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your full name"
+          required
+        />
+      </div>
+      <br />
+
+      <div>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      <br />
+
+      <div>
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Create a password"
+          minlength="8"
+          required
+        />
+      </div>
+      <br />
+
+      <div>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+      </div>
+      <br />
+
+      <!-- Dropdown -->
+      <div>
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="" disabled selected>Select your country</option>
+          <option value="us">Kenya</option>
+          <option value="ca">Uganda</option>
+          <option value="uk">Tanzania</option>
+          <option value="au">Somalia</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <br />
+
+      <!-- Radio buttons -->
+      <div>
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label>
+      </div>
+      <br />
+
+      <!-- Checkboxes -->
+      <div>
+        <label>Interests:</label>
+        <input type="checkbox" id="tech" name="interests" value="tech" />
+        <label for="tech">Technology</label>
+
+        <input type="checkbox" id="sports" name="interests" value="sports" />
+        <label for="sports">Sports</label>
+
+        <input type="checkbox" id="music" name="interests" value="music" />
+        <label for="music">Music</label>
+
+        <input type="checkbox" id="reading" name="interests" value="reading" />
+        <label for="reading">Reading</label>
+      </div>
+      <br />
+
+      <!-- Submit button -->
+      <div>
+        <input type="submit" value="Register" />
+      </div>
+    </form>
+  </body>
+</html>
